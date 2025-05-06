@@ -5,7 +5,7 @@ Console.Write("Digite um número para conferir se ele é par ou impar: ");
 
 while (!int.TryParse(Console.ReadLine(), out numero) || numero < 0)
 {
-    Console.Write("Digite um número válido. Digite novamente: ");
+    Console.Write("Digite um número inteiro ou maior que 0. Digite novamente: ");
 }
 
 if (numero % 2 == 0){
@@ -13,6 +13,7 @@ if (numero % 2 == 0){
 }else{
     Console.WriteLine($"O número que você digitou é {numero} e é impar");
 }
+
 Console.Write("Digite qualquer tecla para finalizar o programa!");
 Console.ReadKey();
 Console.Clear();
